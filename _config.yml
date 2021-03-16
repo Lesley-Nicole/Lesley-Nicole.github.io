@@ -1,4 +1,4 @@
-theme: minima
+theme: jekyll-theme-merlot
 author: Lesley-Nicole
 email: lesley-nicole@protonnail.com
 description: > # this means to ignore newlines until "baseurl:"
