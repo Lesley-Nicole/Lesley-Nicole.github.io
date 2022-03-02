@@ -1,0 +1,145 @@
+
+body {
+    padding:20px;
+    height: 100%;
+    background-color: black;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.image-container {
+    background-size: cover;
+    position: relative;
+    height: 55vw;
+}
+
+.text {
+    background-color: black;
+    color: white;
+    font-size: 10vw;
+    font-weight: bolder;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    letter-spacing: 10px;
+    margin: 0 auto;
+    padding: 5px;
+    width: 88%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: multiply;
+}
+
+.main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+button {
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    padding: 8px 12px;
+    background-color: lightcoral;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: rgb(255, 194, 194);
+}
+
+button.active {
+    background-color: rgb(255, 183, 189);
+}
+
+.section-body {
+    font-size: 3vw;
+    padding:8px 10px;
+    text-align: center;
+}
+
+.section-header {
+    font-size: 3.5vw;
+    text-align: left;
+    color: lightpink;
+    padding: 8px 10px;
+}
+
+h3 {
+    font-size: 2.5vw;
+    padding: 8px 10px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.text-button  {
+    font-size: 2vw;
+    letter-spacing: 1px;
+    color: lightcoral;
+    background-color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+.skills-container {
+    width: 100%;
+    background-color: #ddd;
+}
+
+.skills-body {
+    color: #ddd;
+    letter-spacing: 1px;
+}
+
+.skills {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: black;
+    font-weight: bold;
+}
+
+.skills-html {width:90%; background:linear-gradient(to bottom right, rgb(69, 170, 253), rgb(0, 110, 255), rgb(3, 44, 121));}
+.skills-css {width:90%; background:linear-gradient(to bottom right,pink, deeppink, rgb(253, 0, 76));}
+.skills-js {width:40%; background:linear-gradient(to bottom right,rgb(250, 217, 174), lightsalmon,coral);}
+.skills-python {width:35%; background:linear-gradient(to bottom right,rgb(166, 115, 248),rgb(88, 3, 185), rgb(47, 2, 90));}
+
+.contact-section {
+    padding-bottom: 40px;
+}
+
+table {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    margin: auto;
+}
+
+td {
+    width: 50%;
+}
+
+.bar {
+    text-align: center;
+}
+
+footer {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 100px;
+}
+
+footer .bg {
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+}
