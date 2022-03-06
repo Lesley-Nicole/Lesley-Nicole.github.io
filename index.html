@@ -8,85 +8,142 @@
         <link rel="favicon" type="image/x-icon" href="assets/images/heart-favicon.ico"> 
         <link type="text/css" rel="stylesheet" href="css/index.css">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:500|Source+Code+Pro:300,400,600,700" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <style>
+            .w3-row-padding img {margin-bottom: 12px}
+            /* Set the width of the sidebar to 120px */
+            .w3-sidebar {width: 120px;background: #222;}
+            /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+            #main {margin-left: 120px}
+            /* Remove margins from "page content" on small screens */
+            @media only screen and (max-width:600px) {#main {margin-left:0}}
+        </style>
     </head>
-    <body>
-        <header>
-            <div id="button-container"> 
-                <button class="active"><img src="assets/images/name-icon.png" width="45" onclick="index.html"></button>
-                <button class="button" href="https://ay57njnmowj.typeform.com/to/lutfzxA0">CONTACT</button>
-            </div>
-            <div class="image-container" style="background-image:url('assets/images/multi-hearts.png')"> 
-                <div class="text">LESLEY<br> NICOLE<br>SMITH<br>
-                    <small style="font-size:4vw">Designer-Developer</small>
-                </div>
-            </div> 
-        </header>  
 
-        <main>
-            <section id="about" class="about-section">  
-                <div class="container"> 
-                    <h2 class="section-header">About<br><hr width="12%" style="float:left;border-color:lightsalmon"></h2>  
-                    <p class="section-body">Hi I'm Lesley. I'm a self taught web designer and developer. I make websites, digital art, and personal branding. I'm also a Certified Rasa Developer and currently studying blockchain.</p>
-                </div>
-            </section> 
+    <body class="w3-black;"> 
+            <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+                <!-- Avatar image in top left corner -->  
+                <img src="assets/images/profile-pic.gif" alt="profile pic">
+                <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+                    <img src="assets/images/house-heart-w.png" alt="house" width="60%">
+                  <p>HOME</p>
+                </a>
+                <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+                    <img src="assets/images/heartfeltidea.png" alt="heartshaped lightbulb" width="60%">
+                    <p>ABOUT</p>
+                  </a>
+                  <a href="#projects" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+                      <img src="assets/images/heart-bulb-w.png" alt="heart-bulb" width="60%">
+                    <p>PROJECTS</p>
+                  </a> 
+                  <a href="https://ay57njnmowj.typeform.com/to/lutfzxA0" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+                      <img src="assets/images/heart-mail-w.png" alt="envelope" width="60%"> 
+                    <p>CONTACT</p>
+                  </a>
+                </nav>
 
-            <section class="skills">
-                <div class="skills-container">
-                    <h2 class="section-header" style="background-color:black">My Skills<br><hr width="17%" style="float:left;border-color:lightsalmon"></h2>
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+    <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+      <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+      <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+      <a href="#projects" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+      <a href="https://ay57njnmowj.typeform.com/to/lutfzxA0" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+    </div>
+  </div>  
+
+           <div class="w3-padding-large" id="main">
+               <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+            <div id="stripped">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 1062">
+                <polyline points="0,154 131,0 0,348 269,0 0,562 437,0 
+                    0,766 565,14 0,1062 719,0 289,1062 843,0 543,1062 995,0 729,1062 1161,0 947,1062 1307,0 1143,1062 1500,162 1299,1062 1500,830"/>
+                </svg>
+                </div>  
+                <p class="title" style="font-size:4vw;font-weight:bold;color:lightcoral;text-shadow:2px 2px rgb(61, 61, 61);">Web Designer-Developer</p>
+                </header>
+
+                <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+                    <h2 class="w3-text-light-grey">About Me</h2>
+                    <hr style="width:140px" class="w3-opacity"> 
+                    <p class="section-body">Hi I'm Lesley. I'm a self taught web designer and developer. I make websites, digital art, and personal branding. I'm also a Certified Rasa Developer and currently learning blockchain.</p>
+                <div class="bar"><img src="assets/images/pink-bar.png"></div>
                 </div>
 
-                <p class="skills-body">HTML</p>
-                <div class="skills-container">
-                    <div class="skills-html" style="padding:7px">90%</div> 
+                <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
+                <p class="w3-wide">HTML</p>
+                <div class="w3-white">
+                <div class="skills-html" style="height:28px;width:95%"></div>
                 </div>
+                <p class="w3-wide">CSS</p>
+                <div class="w3-white">
+                <div class="skills-css" style="height:28px;width:90%"></div>
+                </div>
+                <p class="w3-wide">Javascript</p>
+                <div class="w3-white">
+                <div class="skills-js" style="height:28px;width:40%"></div>
+                </div>
+                <p class="w3-wide">Python</p>
+                    <div class="w3-white">
+                        <div class="skills-python" style="height:25px;width:40%"></div>
+                    </div>
+                    <br>
 
-                <p class="skills-body">CSS</p>
-                <div class="skills-container">
-                    <div class="skills-css" style="padding:7px">90%</div>
+            <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+                <div class="w3-quarter w3-section">
+                  <span class="w3-xlarge">4+</span><br>
+                  Websites
                 </div>
+                <div class="w3-quarter w3-section">
+                  <span class="w3-xlarge">6+</span><br>
+                  Projects Done
+                </div>
+                <div class="w3-quarter w3-section">
+                  <span class="w3-xlarge">50+</span><br>
+                  Custom Docs.
+                </div>
+                <div class="w3-quarter w3-section">
+                  <span class="w3-xlarge">30+</span><br>
+                  Branding
+                </div>
+              </div>
 
-                <p class="skills-body">Javascript</p>
-                <div class="skills-container"> 
-                    <div class="skills-js" style="padding:7px;">40%</div>
-                </div>
- 
-                <p class="skills-body">Python</p>
-                <div class="skills-container">
-                    <div class="skills-python" style="padding:7px">35%</div>
-                </div>
-            </section>  
-            <br>
-            <br>
-            <div class="bar"><img src="assets/images/pink-bar.png">
+              <button class="w3-button w3-light-grey w3-padding-large w3-section">
+                <i class="fa fa-download"></i> Download Resume
+              </button>
 
-            <section id="projects" class="projects-section">
-                <div class="container">
-                    <h2 class="section-header">Projects<br><hr width="16%" style="float:left;border-color:lightsalmon;"></h2>
-                    <h3><i>Pink Hex</i><br>Theme for Windows Terminal</h3>
+              <div class="bar"><img src="assets/images/pink-bar.png"></div>
+
+              <div class="w3-padding-64 w3-content" id="projects">
+                <h2 class="w3-text-light-grey">My Projects</h2>
+                <hr style="width:160px" class="w3-opacity">
+
+    <div class="w3-row-padding" style="margin:0 -16px"> 
+        <div class="w3-wide">
+            <h3 class="w3-padding-16"><i>Pink Hex</i><br>theme for Windows Terminal</h3>
+
                     <p class="section-body">  
-                        <a href="https://github.com/lesley-nicole/Pink-Hex-for-Windows-Terminal"><img src="assets/images/pinkHex.png" alt="pink hexagons" style="width:50%;border:2px solid lightcoral;"><img src="assets/images/pinkHexScreen.jpg" style="width:50%;border:2px solid lightcoral;padding:15px;"></a>  
+                        <a href="https://github.com/lesley-nicole/Pink-Hex-for-Windows-Terminal"><img src="assets/images/pinkHex.png" alt="pink hexagons" style="width:50%;border:2px solid lightcoral;"><img src="assets/images/pinkHexScreen.jpg" style="width:50%;border:2px solid lightcoral;padding:12px;"></a>  
                     </p>
-                </div>
-                <br>
-                <div class="container"> 
-                    <h3><i>Pink Mode</i><br>Toggle Themes</h3>
+
+                    <h3 class="w3-padding-16"><i>Pink Mode</i><br>toggle swith for 'pink mode'</h3>
                     <p class="section-body">
                         <a href="https://github.com/lesley-nicole/Toggle-Pink-Mode"><img src="assets/images/frame-pink-mode.gif" alt="heart light gif" style="width:50%;border: 2px solid lightcoral;border-radius:4px;"></a>
-                    </p>
-                </div>
-                <br>
-                <div class="container">
-                    <h3><i>Portfolio</i><br>This Website</h3>
-                </div>
-            </section>
-            <br> 
+                    </p> 
 
+                    <h3 class="w3-padding-16"><i>Portfolio</i><br>(This Website)</h3>
+                </div>
             <div class="bar"><img src="assets/images/pink-bar.png">
-            
-            <section id="contact" class="contact-section">  
-                <div class="container">
-                    <div class="row">
-                        <h2 class="section-header">Contact<br><hr width="16%" style="float:left;border-color:lightsalmon"></h2>
+                </div>
+             
+                <div class="w3-row-padding" style="margin:0 -16px">
+                    <div class="w3-wide">
+                        <h2 class="w3-text-light-grey">Contact<br>
+                            <hr class="w3-opacity" width="26%;">
+                            </h2>
+                            <br>
+ 
                         <table cols="2" width="100%">
                             <tr>
                                 <td rows="2"> 
@@ -99,17 +156,17 @@
                             <a href="https://www.github.com/lesley-nicole"><img src="assets/images/GitHub_Logo_White.png" alt="github logo" width="60%"></a>
                         </td>
                         </tr> 
-                       </table> 
+                       </table>   
                     </div> 
-                </div> 
-            </section> 
-        </main>
-        <footer> 
-            <div class="branding">  
-                <div class="bg"><img src="assets/images/multi-hearts.png" width="100%"></div>
-                <a href="https://Lesley-Nicole.w3spaces.com"><img src="assets/images/name-icon.png" width="40%" style="position:absolute;left:50%;top:50%;transform:translate(-50%, -50%);background-color:black;padding:10px;border:2px solid black;border-radius:4px;"></a>
-            </div>    
-        </footer>
+                    </div>
+                    <div class="bar"><img src="assets/images/pink-bar.png"></div> 
+                <br> 
+                <br> 
+
+                <p class="w3-large" style="color:lightslategray;text-align:center;">Made by</p>
+        <footer class="w3-medium">
+                <a href="https://Lesley-Nicole.w3spaces.com"><img src="assets/images/name-icon.png" width="40%" style="position:absolute;left:50%;top:50%;transform:translate(-50%, -50%);background-color:black;"></a> 
+          </footer>
 
     </body>
 </html>

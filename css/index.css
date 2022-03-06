@@ -1,3 +1,37 @@
+@keyframes scribble {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  header { background: #000; }
+  div#stripped {
+    max-width: 750px;
+    margin: 0 auto;
+    background: #000;
+    background-image: url(../assets/images/hearts-name.gif);
+    background-size: cover;
+    font-size: 0;
+  }
+  div#stripped svg {
+    background: #000;
+    mix-blend-mode: darken;
+  }
+  
+  div#stripped svg polyline {
+    fill: none;
+    stroke: rgb(255, 255, 255);
+    stroke-width: 175;
+    stroke-dasharray: 20000;
+    stroke-dashoffset: 20000; 
+    animation: scribble 3s linear forwards;
+  }
+  @media 
+  (-webkit-min-device-pixel-ratio: 2), 
+  (min-resolution: 192dpi) { 
+    div#stripped {
+        background-image: url(../assets/images/hearts-name.gif);
+    }
+}
 
 body {
     padding:20px;
