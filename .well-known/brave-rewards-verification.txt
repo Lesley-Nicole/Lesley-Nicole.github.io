@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: lesley-nicole.github.io
+Token: 7ccfa8c060a23f104dd093c19de83d51e302dc20e681e285b46ad6f88711045d
